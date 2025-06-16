@@ -5,7 +5,6 @@ end
 
 input = ARGV[0]
 
-# Parse string into array
 begin
   elements = eval(input)
 rescue
@@ -22,6 +21,5 @@ elements.each do |el|
   length_hash[len] << str
 end
 
-# Sort hash by keys and print
 sorted_hash = length_hash.sort.to_h
 puts sorted_hash
